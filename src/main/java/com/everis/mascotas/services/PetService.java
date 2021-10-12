@@ -29,6 +29,10 @@ public class PetService implements PetServiceInt {
 	public Pet getPetByName(String nombre) {
 		return petRepository.findByNombre(nombre);
 	}
+	
+	public Pet updatePet( final Pet pet ) {
+		return petRepository.save(pet);
+	}
 
 	public void deletePet(int id) {
 		petRepository.deleteById(id);

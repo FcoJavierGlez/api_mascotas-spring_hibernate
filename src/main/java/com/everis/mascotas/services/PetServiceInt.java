@@ -14,6 +14,8 @@ public interface PetServiceInt {
 	
 	public Pet getPetByName( final String name );
 	
+	public Pet updatePet( final Pet pet );
+	
 	public void deletePet( final int id );
 	
 }
